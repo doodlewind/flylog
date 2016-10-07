@@ -1,0 +1,149 @@
+<p><head>
+    <title>FlyLog - Doc</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/GitHub2.css">
+<link rel="stylesheet" href="css/Darcula.css"></head></p>
+<p><nav>
+    <div class="title">FlyLog</div>
+    <div class="nav-item" onclick="window.open(&apos;/&apos;)">Admin</div>
+    <div class="nav-item active">Doc</div>
+</nav></p>
+<style>
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "AgencyFB";
+    src: url("font/AgencyFB.woff") format("woff");
+}
+h1, h2, h3, h4 {
+    color: #355A9F;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #355A9F;
+}
+.title, .nav-item {
+    font-size: 20px;
+    font-family: "AgencyFB", sans-serif;;
+    font-weight: normal;
+    color: #FEFEFE;
+}
+.title {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.nav-item {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.nav-item.active {
+    border-bottom: 4px #FEFEFE solid;
+}
+</style>
+
+
+<h1 id="flylog">FlyLog</h1>
+<p>&#x524D;&#x7AEF; AOP &#x8DE8;&#x5C4F;&#x65E5;&#x5FD7;&#x53CA;&#x6027;&#x80FD;&#x5206;&#x6790;&#x5DE5;&#x5177;&#x3002;</p>
+<ul>
+<li>&#x5B9E;&#x65F6;&#x63A8;&#x9001;&#x9875;&#x9762;&#x8C03;&#x8BD5;&#x53CA;&#x62A5;&#x9519;&#x65E5;&#x5FD7;</li>
+<li>&#x8BB0;&#x5F55;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x6027;&#x80FD;&#x4FE1;&#x606F;</li>
+<li>&#x63D0;&#x4F9B;&#x9762;&#x5411;&#x5207;&#x9762;&#x98CE;&#x683C;&#x7684; API&#xFF0C;&#x53EF;&#x65E0;&#x4FB5;&#x5165;&#x5730;&#x4E3A;&#x9875;&#x9762;&#x6DFB;&#x52A0;&#x8C03;&#x8BD5;&#x7B49;&#x4FE1;&#x606F;</li>
+</ul>
+<h2 id="demo">Demo</h2>
+<p>&#x6253;&#x5F00; <a href="/" target="_blank">FlyLog Admin</a> &#x5373;&#x53EF;&#x67E5;&#x770B;&#x5F15;&#x5165; FlyLog &#x540E;&#x672C;&#x9875;&#x9762;&#x5B9E;&#x65F6;&#x7684;&#x8C03;&#x8BD5;&#x548C;&#x62A5;&#x9519;&#x4FE1;&#x606F;&#x3002;&#x5237;&#x65B0;&#x672C;&#x9875;&#x5373;&#x53EF;&#x67E5;&#x770B;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x3002;&#x63A7;&#x5236;&#x53F0;&#x7684;&#x539F;&#x59CB;&#x8F93;&#x51FA;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#x3002;&#x53EF;&#x70B9;&#x51FB;&#x4E0B;&#x65B9;&#x6309;&#x94AE;&#x89E6;&#x53D1;&#x65E5;&#x5FD7;&#x548C;&#x62A5;&#x9519;&#x4E8B;&#x4EF6;&#xFF1A;</p>
+<button onclick="console.log(1)">console.log(1)</button>
+<button onclick="console.log(2)">console.log(2)</button>
+<button onclick="console.log(&apos;foo&apos;, 2, 3)">console.log(&apos;foo&apos;, 2, 3)</button>
+<button onclick="refErr()">Ref Error</button>
+<button onclick="typeErr()">Type Error</button>
+<button onclick="syntaxErr(">Syntax Error</button>
+
+<script src="js/demo-1.js"></script>
+<script src="js/demo-2.js"></script>
+<script crossorigin="" id="fly-echo" src="/flyEcho.min.js"></script>
+
+<p>&#x5728; iOS &#x548C; Android &#x8BBE;&#x5907;&#x4E0A;&#x6253;&#x5F00;&#x672C;&#x9875;&#xFF0C;&#x89E6;&#x53D1;&#x7684;&#x8C03;&#x8BD5;&#x4FE1;&#x606F;&#x5747;&#x53EF;&#x63A8;&#x9001;&#x5230; Admin &#x540E;&#x53F0;&#x3002;&#x5F15;&#x5165; FlyLog &#x7684;&#x9875;&#x9762;&#x540C;&#x65F6;&#x88AB;&#x591A;&#x4EBA;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x9875;&#x9762;&#x89E6;&#x53D1;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x4F1A;&#x5E7F;&#x64AD;&#x5230;&#x6BCF;&#x4E2A; Admin &#x540E;&#x53F0;&#x4E0A;&#x3002;&#x8DE8;&#x57DF;&#x4E0D;&#x5F71;&#x54CD; FlyLog &#x7684;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x3002;</p>
+<h2 id="-">&#x5B89;&#x88C5;</h2>
+<p>&#x5B89;&#x88C5; <a href="https://nodejs.org/" target="_blank">Node.js</a> &#x540E;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code class="lang-text">npm install -g flylog
+</code></pre>
+<h2 id="-">&#x4F7F;&#x7528;</h2>
+<p>&#x542F;&#x52A8; flylog &#x670D;&#x52A1;&#x7AEF;&#xFF08;&#x9ED8;&#x8BA4;&#x76D1;&#x542C; 3000 &#x7AEF;&#x53E3;&#xFF0C;&#x652F;&#x6301; <code>flylog 2333</code> &#x66F4;&#x6539;&#x7AEF;&#x53E3;&#x53F7;&#xFF09;&#x540E;</p>
+<pre><code class="lang-text">flylog
+</code></pre>
+<p>&#x5728;&#x6240;&#x9700;&#x8C03;&#x8BD5;&#x7684;&#x9875;&#x9762;&#x5C3E;&#x90E8;&#x5F15;&#x5165;&#x5982;&#x4E0B;&#x811A;&#x672C;&#x5373;&#x53EF;&#xFF0C;&#x7AEF;&#x53E3;&#x53F7;&#x548C;&#x5730;&#x5740;&#x9700;&#x66FF;&#x6362;&#x4E3A;&#x5B9E;&#x9645;&#x503C;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fly-echo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://localhost:3000/flyEcho.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h2 id="api">API</h2>
+<p>FlyLog &#x63D0;&#x4F9B;&#x7684; <code>before</code> &#x548C; <code>after</code> API &#x53EF;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x539F;&#x6709;&#x4EE3;&#x7801;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x4E3A;&#x51FD;&#x6570;&#x6DFB;&#x52A0;&#x8C03;&#x8BD5;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="before">before</h3>
+<p><code>before</code> &#x53EF;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x4EE3;&#x7801; Hook &#x5230;&#x51FD;&#x6570;&#x6267;&#x884C;&#x524D;&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x539F;&#x6709;&#x4EE3;&#x7801;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x);
+}
+
+<span class="hljs-comment">// &#x6302;&#x8F7D; before &#x4E8B;&#x4EF6;</span>
+foo = foo.before(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x + <span class="hljs-number">1</span>);
+});
+
+<span class="hljs-comment">// &#x5728;&#x70B9;&#x51FB;&#x7B49;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1; foo &#x65F6;&#x5148;&#x6267;&#x884C; before &#x518D;&#x6267;&#x884C; foo</span>
+foo(<span class="hljs-number">1</span>); <span class="hljs-comment">// 2 1</span>
+</code></pre>
+<p>&#x82E5;&#x8981;&#x963B;&#x6B62;&#x539F;&#x51FD;&#x6570;&#x6267;&#x884C;&#xFF0C;&#x5728;&#x6CE8;&#x5165;&#x7684;&#x533F;&#x540D;&#x51FD;&#x6570;&#x5185;&#x8FD4;&#x56DE; <code>false</code> &#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5BF9;&#x8C61;&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x53EF; Hook</span>
+<span class="hljs-keyword">var</span> foo = {
+    <span class="hljs-attr">bar</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(x);
+    }
+}
+
+foo.bar = foo.bar.before(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x + <span class="hljs-number">1</span>);
+    <span class="hljs-comment">// &#x53EF;&#x5728;&#x8C03;&#x8BD5;&#x65F6;&#x6309;&#x9700;&#x963B;&#x6B62;&#x539F;&#x51FD;&#x6570;&#x6267;&#x884C;</span>
+    <span class="hljs-keyword">if</span> (x == <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+});
+
+foo.bar(<span class="hljs-number">1</span>); <span class="hljs-comment">// 2</span>
+foo.bar(<span class="hljs-number">2</span>); <span class="hljs-comment">// 3 2</span>
+</code></pre>
+<h3 id="after">after</h3>
+<p><code>after</code> &#x53EF;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x4EE3;&#x7801; Hook &#x5230;&#x51FD;&#x6570;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x6267;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.onload = (<span class="hljs-built_in">window</span>.onload || <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}).after(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-number">1</span>);
+});
+</code></pre>
+<p><code>flyEcho.js</code> &#x4E2D;&#x5373;&#x5E94;&#x7528;&#x4E86;&#x4E0A;&#x4F8B;&#x4EE5;&#x5B9E;&#x73B0;&#x5728; <code>window.onload</code> &#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x4E0A;&#x62A5;&#x6027;&#x80FD;&#x6570;&#x636E;&#x3002;&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x539F;&#x51FD;&#x6570;&#x8FD4;&#x56DE; <code>false</code> &#x65F6;&#x53EF;&#x963B;&#x65AD; <code>after</code> &#x6267;&#x884C;&#x3002;</p>
+<h2 id="-">&#x67B6;&#x6784;</h2>
+<p>FlyLog &#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6A21;&#x5757;&#xFF1A;</p>
+<ul>
+<li><code>flyEcho.js</code> &#x4F9B;&#x5F85;&#x8C03;&#x8BD5;&#x9875;&#x9762;&#x5F15;&#x5165;&#x7684; AOP &#x6A21;&#x5757;&#xFF0C;&#x65E0;&#x7B2C;&#x4E09;&#x65B9;&#x4F9D;&#x8D56;</li>
+<li><code>flyHub.js</code> &#x65E0;&#x72B6;&#x6001;&#x7684; Node.js WebSocket &#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x5141;&#x8BB8;&#x8DE8;&#x57DF;&#x5E76;&#x63D0;&#x4F9B;&#x57FA;&#x7840;&#x7684;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x670D;&#x52A1;</li>
+<li><code>flyAdmin.js</code> &#x540E;&#x53F0;&#x754C;&#x9762;&#xFF0C;&#x57FA;&#x4E8E; vue.js &#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#xFF0C;Gulp + Webpack &#x6253;&#x5305;</li>
+</ul>
+<h2 id="-">&#x5F00;&#x53D1;</h2>
+<p>&#x6784;&#x5EFA;&#x5F00;&#x53D1;&#x7248;&#x672C;&#xFF08;&#x6784;&#x5EFA;&#x524D;&#x9700;&#x6E05;&#x7A7A; <code>dist</code> &#x76EE;&#x5F55;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-text">gulp build-dev
+</code></pre>
+<p>&#x6784;&#x5EFA;&#x751F;&#x4EA7;&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-text">gulp build
+</code></pre>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li><code>1.0.0</code> &#x521D;&#x59CB;&#x7248;&#x672C;</li>
+</ul>
