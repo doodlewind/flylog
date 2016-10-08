@@ -24,6 +24,7 @@ nav {
     top: 0;
     left: 0;
     height: 50px;
+    z-index: 10;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -83,8 +84,8 @@ nav {
 <p>&#x542F;&#x52A8; flylog &#x670D;&#x52A1;&#x7AEF;&#xFF08;&#x9ED8;&#x8BA4;&#x76D1;&#x542C; 3000 &#x7AEF;&#x53E3;&#xFF0C;&#x652F;&#x6301; <code>flylog 2333</code> &#x66F4;&#x6539;&#x7AEF;&#x53E3;&#x53F7;&#xFF09;&#x540E;</p>
 <pre><code class="lang-text">flylog
 </code></pre>
-<p>&#x5728;&#x6240;&#x9700;&#x8C03;&#x8BD5;&#x7684;&#x9875;&#x9762;&#x5C3E;&#x90E8;&#x5F15;&#x5165;&#x5982;&#x4E0B;&#x811A;&#x672C;&#x5373;&#x53EF;&#xFF0C;&#x7AEF;&#x53E3;&#x53F7;&#x548C;&#x5730;&#x5740;&#x9700;&#x66FF;&#x6362;&#x4E3A;&#x5B9E;&#x9645;&#x503C;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fly-echo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://localhost:3000/flyEcho.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<p>&#x5728;&#x6240;&#x9700;&#x8C03;&#x8BD5;&#x7684;&#x9875;&#x9762;&#x5C3E;&#x90E8;&#x5F15;&#x5165;&#x5982;&#x4E0B;&#x811A;&#x672C;&#x5373;&#x53EF;&#xFF0C;&#x7AEF;&#x53E3;&#x53F7;&#x548C;&#x5730;&#x5740;&#x9700;&#x66FF;&#x6362;&#x4E3A;&#x5B9E;&#x9645;&#x503C;&#xFF0C;&#x6CE8;&#x610F;&#x811A;&#x672C;&#x9700;&#x7531; flylog &#x670D;&#x52A1;&#x5668;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x5F15;&#x5165;&#xFF0C;&#x4FDD;&#x5B58;&#x811A;&#x672C;&#x5230;&#x672C;&#x5730;&#x540E;&#x5BFC;&#x5165;&#x811A;&#x672C;&#x662F;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x4E0A;&#x62A5;&#x6570;&#x636E;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">crossorigin</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fly-echo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://localhost:3000/flyEcho.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 <h2 id="api">API</h2>
 <p>FlyLog &#x63D0;&#x4F9B;&#x7684; <code>before</code> &#x548C; <code>after</code> API &#x53EF;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x539F;&#x6709;&#x4EE3;&#x7801;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x4E3A;&#x51FD;&#x6570;&#x6DFB;&#x52A0;&#x8C03;&#x8BD5;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
@@ -145,5 +146,8 @@ foo.bar(<span class="hljs-number">2</span>); <span class="hljs-comment">// 3 2</
 </code></pre>
 <h2 id="changelog">Changelog</h2>
 <ul>
+<li><code>1.0.1</code> &#x4FEE;&#x590D; bundle &#x95EE;&#x9898;</li>
 <li><code>1.0.0</code> &#x521D;&#x59CB;&#x7248;&#x672C;</li>
 </ul>
+<h2 id="-">&#x8BB8;&#x53EF;</h2>
+<p>MIT</p>

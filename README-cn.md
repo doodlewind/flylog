@@ -22,6 +22,7 @@ nav {
     top: 0;
     left: 0;
     height: 50px;
+    z-index: 10;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -91,10 +92,10 @@ npm install -g flylog
 flylog
 ```
 
-在所需调试的页面尾部引入如下脚本即可，端口号和地址需替换为实际值，注意：
+在所需调试的页面尾部引入如下脚本即可，端口号和地址需替换为实际值，注意脚本需由 flylog 服务器所在位置引入，保存脚本到本地后导入脚本是无法正确上报数据的：
 
 ``` html
-<script crossorigin id="fly-echo" src="http://localhost:3000/flyEcho.js"></script>
+<script crossorigin id="fly-echo" src="http://localhost:3000/flyEcho.min.js"></script>
 ```
 
 
@@ -176,4 +177,9 @@ gulp build
 
 
 ## Changelog
+* `1.0.1` 修复 bundle 问题
 * `1.0.0` 初始版本
+
+
+## 许可
+MIT

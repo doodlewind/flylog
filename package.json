@@ -1,7 +1,7 @@
 {
   "name": "flylog",
   "repository": "https://github.com/doodlewind/flylog",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "front end remote logging tool",
   "main": "flyhub.js",
   "author": "doodlewind",

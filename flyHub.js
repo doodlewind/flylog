@@ -51,7 +51,7 @@ function serveAdmin(request, response) {
       contentType = 'image/jpg'; break;
   }
 
-  fs.readFile(filePath, function(error, content) {
+  fs.readFile(path.join(__dirname, filePath), function(error, content) {
     if (error) {
       if(error.code == 'ENOENT'){
         response.writeHead(200, { 'Content-Type': contentType });
