@@ -73,6 +73,11 @@ function serveAdmin(request, response) {
 
 function httpHandler(request, response) {
   // support preflight cross-site OPTION request
+    if (path.normalize(decodeURI(request.url)) !== decodeURI(request.url)) {
+        response.statusCode = 403;
+        response.end();
+        return;
+    }
   response.setHeader('Access-Control-Allow-Origin', '*');
   response.setHeader('Access-Control-Request-Method', '*');
   response.setHeader('Access-Control-Allow-Methods', '*');
